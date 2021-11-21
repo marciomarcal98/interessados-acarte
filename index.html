@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Indique Um Amigo</title>
+  </head>
+  <body>
+    <main>
+      <section class="form">
+        <div class="indicado">
+          <h2>Interessado</h2>
+          <form action="">
+            <div class="input">
+              <label for="name">Nome Completo:</label>
+              <input
+                id="name"
+                type="text"
+                required
+                placeholder="Digite aqui seu nome completo"
+              />
+            </div>
+            <div class="input">
+              <label for="tel">Telefone <small>(com DDD)</small>:</label>
+              <input
+                id="tel"
+                type="text"
+                required
+                placeholder="Digite aqui seu celular"
+              />
+            </div>
+            <div class="input">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                type="email"
+                required
+                placeholder="Digite aqui seu email"
+              />
+            </div>
+            <div class="input">
+              <label for="instrumento">Qual curso te interessou?</label>
+              <input
+                id="instrumento"
+                type="text"
+                required
+                placeholder="Digite aqui o curso de seu interesse"
+              />
+            </div>
+          </form>
+          <button onclick="send()">Enviar</button>
+        </div>
+        <div class="resposta">
+          <p></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
